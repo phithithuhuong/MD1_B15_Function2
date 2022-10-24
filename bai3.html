@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<body>
+<script>
+    let n = +prompt('Nhập số để tính giai thừa :');
+    let sum = 1;
+    function handle(){
+        for (let i = 1 ;i<= n;i++){//i<n sẽ ra kết quả sai,khi * phải gán cho bằng 1
+            sum*=i;
+
+        }
+        return sum  ;
+    }
+    document.write(`Giai thừa của ${n} là :` +handle())
+</script>
+
+</body>
+</html>

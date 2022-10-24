@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.-->
+<script>
+    let n = prompt('Nhập độ dài của mảng :');
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        let s = prompt(' Nhập các phần tử của mảng : ')
+        arr.push(s)
+    }
+    let sum =[]
+    function handle(){
+         sum=arr.reverse()
+        return sum;
+    }
+    document.write(`Đảo ngược Array ${arr.join('-')} là :`+handle())
+</script>
+</body>
+</html>
